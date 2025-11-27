@@ -1,0 +1,29 @@
+# Bug Localization System Requirements
+
+# Core dependencies
+javalang==0.13.0           # Java source code parser
+neo4j==5.14.1              # Neo4j Python driver
+
+# LLM for bug analysis (requires API key)
+google-generativeai==0.3.2 # Google Gemini API client
+
+# Environment variables
+python-dotenv==1.0.0       # Load .env files
+
+# Utilities
+pathlib2==2.3.7.post1      # Path utilities (Python 2 compatibility)
+pandas==2.1.4              # Data manipulation and Parquet reading
+pyarrow==14.0.1            # Parquet file format support
+
+# Visualization
+networkx==3.2.1            # Graph data structure and algorithms
+matplotlib==3.8.2          # Plotting and visualization
+
+# Development/Testing
+pytest==7.4.3              # Testing framework
+pytest-cov==4.1.0          # Code coverage
+
+# Note: Neo4j database required
+# Download from: https://neo4j.com/download/
+# Recommended: Neo4j Desktop for easy setup
+

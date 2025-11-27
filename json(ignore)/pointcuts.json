@@ -1,0 +1,9 @@
+[
+  {
+    "pointcut_id": "PC1",
+    "name": "p",
+    "args": "()",
+    "expr": "call(* *(..))",
+    "file_id": "F228"
+  }
+]

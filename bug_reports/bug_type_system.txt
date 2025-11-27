@@ -1,0 +1,89 @@
+Bug Report: Type System Resolution Cascade Failure
+
+Title: Complete type resolution failure affecting World, ResolvedType, ReferenceType, and entire type hierarchy
+
+Description:
+Catastrophic failure in the type resolution system causing a complete breakdown of the
+weaver's ability to resolve types. This affects the entire type hierarchy resolution
+mechanism, impacting World, BcelWorld, ResolvedType, ReferenceType, TypeFactory,
+and all components that depend on type information.
+
+The bug occurs when resolving parameterized types with complex generic bounds that
+involve multiple levels of inheritance and interface implementation. The resolution
+cache becomes corrupted, leading to cascading failures throughout the system.
+
+Stack Trace:
+java.lang.StackOverflowError: Infinite recursion in type resolution
+    at org.aspectj.weaver.ReferenceType.findDerivativeType(ReferenceType.java:1122)
+    at org.aspectj.weaver.TypeFactory.createParameterizedType(TypeFactory.java:44)
+    at org.aspectj.weaver.ResolvedType.parameterize(ResolvedType.java:2479)
+    at org.aspectj.weaver.ResolvedType.getMethods(ResolvedType.java:789)
+    at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:456)
+    at org.aspectj.weaver.World.resolve(World.java:456)
+    at org.aspectj.weaver.World.getCrossReferenceKey(World.java:789)
+    at org.aspectj.weaver.bcel.BcelWorld.resolve(BcelWorld.java:567)
+    at org.aspectj.weaver.bcel.BcelWorld.addTypeMunger(BcelWorld.java:234)
+    at org.aspectj.weaver.bcel.BcelWeaver.prepareForWeave(BcelWeaver.java:890)
+    at org.aspectj.weaver.bcel.BcelObjectType.getDelegateForType(BcelObjectType.java:234)
+    at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:567)
+
+Caused by: java.util.ConcurrentModificationException
+    at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:901)
+    at java.util.ArrayList$Itr.next(ArrayList.java:851)
+    at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:673)
+    at org.aspectj.weaver.ResolvedType.getInterfaces(ResolvedType.java:234)
+    ... 12 more
+
+Problem Analysis:
+1. ReferenceType maintains derivative type cache that gets corrupted
+2. TypeFactory creates parameterized types that reference corrupted cache
+3. World's type resolution cache has race condition
+4. ResolvedType's method resolution depends on corrupted type information
+5. BcelWorld cannot add type mungers due to bad type state
+6. All classes depending on type information fail
+
+This creates a dependency chain failure:
+World → BcelWorld → ReferenceType → TypeFactory → ResolvedType
+  ↓        ↓           ↓               ↓             ↓
+BcelWeaver → BcelClassWeaver → BcelObjectType
+  ↓
+All aspects and target classes fail
+
+Affected Operations:
+- Type resolution (all type queries fail)
+- Method lookup (cannot find methods)
+- Interface resolution (cannot determine interfaces)
+- Inheritance hierarchy traversal (infinite loops)
+- Generic type instantiation (fails with StackOverflow)
+- Type munger application (cannot determine target types)
+
+Expected Behavior:
+Type resolution should be robust, cache-consistent, thread-safe, and handle
+complex generic hierarchies without infinite recursion.
+
+Actual Behavior:
+Complete failure of type system, affecting:
+- World and BcelWorld (type caches corrupted)
+- ReferenceType (derivative type tracking fails)
+- ResolvedType (method/interface resolution fails)
+- TypeFactory (cannot create parameterized types)
+- BcelObjectType (cannot get delegate types)
+- BcelClassWeaver and BcelWeaver (cannot weave due to bad type info)
+
+Impact:
+CRITICAL - Entire type system fails, no aspects can be woven, all compilation stops.
+Every class that uses type information (essentially the entire weaver) is affected.
+
+Environment:
+- AspectJ 1.9.7 with load-time weaving
+- Java 11+ with complex generic hierarchies
+- Multi-threaded application (50+ threads)
+- Large codebase (1000+ classes, 100+ aspects)
+
+Workaround:
+None - complete weaver restart required, but issue recurs.
+
+
+
+
+

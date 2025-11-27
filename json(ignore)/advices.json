@@ -1,0 +1,863 @@
+[
+  {
+    "advice_id": "ADV1",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV2",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV3",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV4",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV5",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(List<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV6",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV7",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV8",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV9",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV10",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV11",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m1(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV12",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV13",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV14",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV15",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV16",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(List<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV17",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV18",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV19",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV20",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV21",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV22",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m2(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV23",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV24",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV25",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV26",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV27",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(List<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV28",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV29",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV30",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV31",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV32",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV33",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m3(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV34",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV35",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV36",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV37",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV38",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(List<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV39",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV40",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV41",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV42",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV43",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV44",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m4(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV45",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV46",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV47",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV48",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV49",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(List<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV50",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList<? extends Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV51",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV52",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV53",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV54",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV55",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m5(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV56",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List<D1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV57",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<D1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV58",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List<C1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV59",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<C1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV60",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List<? extends B1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV61",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<? extends\n\t// // B1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV62",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List<? extends C1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV63",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<? extends\n\t// // C1>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV64",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV65",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV66",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV67",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV68",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* D2.m5(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV69",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV70",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV71",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV72",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV73",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(List<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV74",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV75",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV76",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV77",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV78",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV79",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m6(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV80",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List<List<Integer>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV81",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) &&\n\t// // args(ArrayList<List<Integer>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV82",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List<List<Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV83",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) &&\n\t// // args(ArrayList<List<Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV84",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List<? extends\n\t// // List<Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV85",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(ArrayList< ? extends\n\t// // List<Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV86",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List< ? extends List<?\n\t// // extends Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV87",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(ArrayList< ? extends\n\t// // List<? extends Number>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV88",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV89",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV90",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV91",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV92",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m7(..)) &&\n\t// // args(ArrayList<List<String>>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV93",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV94",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV95",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(List<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV96",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList<Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV97",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(List<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV98",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV99",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV100",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV101",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV102",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV103",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m8(..)) && args(ArrayList<String>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV104",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(List<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV105",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(ArrayList<Integer>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV106",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(Number)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV107",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(Integer)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV108",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(List<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV109",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(ArrayList<? extends\n\t// // Number>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV110",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(List)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV111",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(ArrayList)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV112",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(List<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV113",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(ArrayList<?>)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV114",
+    "type": "around",
+    "args": "",
+    "expr": "execution(* C.m9(..)) && args(String)",
+    "file_id": "F113"
+  },
+  {
+    "advice_id": "ADV115",
+    "type": "around",
+    "args": "list",
+    "expr": "\"\n\t\t\t\t\t+ \"(call(public * add(..)) && target(list)) -> \"\n\t\t\t\t\t+ \"static boolean Aspect.ajc_around0\"\n\t\t\t\t\t+ \"(java.util.ArrayList, org.aspectj.runtime.internal.AroundClosure)\");\n        weaveTest(new String[]",
+    "file_id": "F127"
+  },
+  {
+    "advice_id": "ADV116",
+    "type": "before",
+    "args": "",
+    "expr": "get(* *.*) -> void Aspect.ajc_before()\";\n\t\tPerClause per = new PerSingleton();\n\t\tper = per.concretize(world.resolve(\"Aspect\"));\n\n        ShadowMunger myMunger = this.makeConcreteAdvice(s, 0, per);\n\n\t\tweaveTest(getStandardTargets(), \"NonStaticBefore\", myMunger);\n\t}\n\n\tpublic void testBeforeCflow() throws IOException",
+    "file_id": "F143"
+  },
+  {
+    "advice_id": "ADV117",
+    "type": "before",
+    "args": "",
+    "expr": "get(* *.*) -> void Aspect.ajc_before()\";\n\t\tPerClause per = new PatternParser(\"percflow(execution(void main(..)))\").maybeParsePerClause();\n\t\tper.resolve(new TestScope(new String[0], new String[0], world));\n\n\t\tResolvedType onAspect = world.resolve(\"Aspect\");\n\t\tCrosscuttingMembers xcut = new CrosscuttingMembers(onAspect,true);\n\t\tonAspect.crosscuttingMembers = xcut;\n\n\t\tper = per.concretize(onAspect);\n\n        ShadowMunger myMunger = this.makeConcreteAdvice(s, 0, per);\n\n\t\txcut.addConcreteShadowMunger(myMunger);\n\n\n\t\tweaveTest(getStandardTargets(), \"CflowNonStaticBefore\", xcut.getShadowMungers());\n\t}\n\n\tpublic void testBeforePerThis() throws IOException",
+    "file_id": "F143"
+  },
+  {
+    "advice_id": "ADV118",
+    "type": "before",
+    "args": "foo",
+    "expr": "traced(foo) -> void Trace.ajc_before_4(java.lang.Object))\",\n\t\t\t\t\t\t\t\t0),\n\t\t\t\t\t\tBcelTestUtils\n\t\t\t\t\t\t\t\t.shadowMunger(\n\t\t\t\t\t\t\t\t\t\tworld,\n\t\t\t\t\t\t\t\t\t\t\"afterReturning(foo): traced(foo) -> void Trace.ajc_afterreturning_3(java.lang.Object, java.lang.Object))\",\n\t\t\t\t\t\t\t\t\t\tAdvice.ExtraArgument),\n\t\t\t\t\t\tBcelTestUtils\n\t\t\t\t\t\t\t\t.shadowMunger(\n\t\t\t\t\t\t\t\t\t\tworld,\n\t\t\t\t\t\t\t\t\t\t\"around(): execution(* doit(..)) -> java.lang.Object Trace.ajc_around_2(org.aspectj.runtime.internal.AroundClosure))\",\n\t\t\t\t\t\t\t\t\t\tAdvice.ExtraArgument),\n\t\t\t\t\t\tBcelTestUtils\n\t\t\t\t\t\t\t\t.shadowMunger(\n\t\t\t\t\t\t\t\t\t\tworld,\n\t\t\t\t\t\t\t\t\t\t\"around(foo): traced(foo) -> java.lang.Object Trace.ajc_around_1(java.lang.Object, org.aspectj.runtime.internal.AroundClosure))\",\n\t\t\t\t\t\t\t\t\t\tAdvice.ExtraArgument), });\n\n\t\tResolvedType myTrace = world.resolve(UnresolvedType.forName(\"MyTrace\"), true);\n\t\tassertTrue(\"Couldnt find type MyTrace\", !myTrace.isMissing());\n\n\t\tinterfacesTest(myTrace, ResolvedType.NONE);\n\t\tsuperclassTest(myTrace, trace);\n\t\tisInterfaceTest(myTrace, false);\n\t\tisClassTest(myTrace, false);\n\t\tisAspectTest(myTrace, true);\n\n\t\t// XXX need attribute fix -\n\t\t// fieldsTest(myTrace, Member.NONE);\n\n\t\tpointcutsTest(trace, new Member[]",
+    "file_id": "F151"
+  },
+  {
+    "advice_id": "ADV119",
+    "type": "around",
+    "args": "",
+    "expr": "execution(public static void *.main(String[]))",
+    "file_id": "F197"
+  },
+  {
+    "advice_id": "ADV120",
+    "type": "before",
+    "args": "",
+    "expr": "execution(void Goo.m1())",
+    "file_id": "F210"
+  },
+  {
+    "advice_id": "ADV121",
+    "type": "after",
+    "args": "",
+    "expr": "execution(void Goo.m2(String))",
+    "file_id": "F210"
+  },
+  {
+    "advice_id": "ADV122",
+    "type": "around",
+    "args": "int i",
+    "expr": "execution(void Goo.m3(..)) && args(i)",
+    "file_id": "F210"
+  },
+  {
+    "advice_id": "ADV123",
+    "type": "before",
+    "args": "",
+    "expr": "p()",
+    "file_id": "F228"
+  }
+]
