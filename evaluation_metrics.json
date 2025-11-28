@@ -1,0 +1,12 @@
+{
+  "total_bugs": 0,
+  "bugs_with_ground_truth": 0,
+  "top_1_hits": 0,
+  "top_3_hits": 0,
+  "top_5_hits": 0,
+  "top_10_hits": 0,
+  "top_1_accuracy": 0,
+  "top_3_accuracy": 0,
+  "top_5_accuracy": 0,
+  "top_10_accuracy": 0
+}
