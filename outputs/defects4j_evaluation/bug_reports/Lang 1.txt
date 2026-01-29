@@ -1,0 +1,21 @@
+Bug Report: Lang-1 (LANG-747)
+
+Issue: https://issues.apache.org/jira/browse/LANG-747
+
+Exception: java.lang.NumberFormatException
+Message: For input string: "80000000"
+
+Failing Tests:
+  - org.apache.commons.lang3.math.NumberUtilsTest::TestLang747
+
+Stack Trace:
+  --- org.apache.commons.lang3.math.NumberUtilsTest::TestLang747
+  at org.apache.commons.lang3.math.NumberUtils.createInteger(NumberUtils.java:684)
+  at org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:474)
+  at org.apache.commons.lang3.math.NumberUtilsTest.TestLang747(NumberUtilsTest.java:256)
+
+Classes mentioned in trace:
+  - NumberUtils
+
+---
+GROUND TRUTH: org.apache.commons.lang3.math.NumberUtils

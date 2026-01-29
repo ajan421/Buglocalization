@@ -1,0 +1,21 @@
+Bug Report: Lang-5 (LANG-865)
+
+Issue: https://issues.apache.org/jira/browse/LANG-865
+
+Exception: java.lang.IllegalArgumentException
+Message: Invalid locale format: _GB
+
+Failing Tests:
+  - org.apache.commons.lang3.LocaleUtilsTest::testLang865
+
+Stack Trace:
+  --- org.apache.commons.lang3.LocaleUtilsTest::testLang865
+  at org.apache.commons.lang3.LocaleUtils.toLocale(LocaleUtils.java:99)
+  at org.apache.commons.lang3.LocaleUtilsTest.assertValidToLocale(LocaleUtilsTest.java:119)
+  at org.apache.commons.lang3.LocaleUtilsTest.testLang865(LocaleUtilsTest.java:505)
+
+Classes mentioned in trace:
+  - LocaleUtils
+
+---
+GROUND TRUTH: org.apache.commons.lang3.LocaleUtils

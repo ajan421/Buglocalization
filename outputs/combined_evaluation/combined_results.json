@@ -1,0 +1,2025 @@
+{
+  "config": {
+    "lang_bugs": 50,
+    "math_bugs": 50,
+    "total_classes": 1448
+  },
+  "metrics_by_project": {
+    "Lang": {
+      "total_bugs": 50,
+      "top_1_accuracy": 0.28,
+      "top_5_accuracy": 0.3,
+      "top_10_accuracy": 0.3,
+      "mrr": 0.29,
+      "bugs_found": 15,
+      "mean_rank": 1.0666666666666667,
+      "median_rank": 1
+    },
+    "Math": {
+      "total_bugs": 50,
+      "top_1_accuracy": 0.2,
+      "top_5_accuracy": 0.3,
+      "top_10_accuracy": 0.3,
+      "mrr": 0.24333333333333332,
+      "bugs_found": 15,
+      "mean_rank": 1.4666666666666666,
+      "median_rank": 1
+    }
+  },
+  "combined_metrics": {
+    "total_bugs": 100,
+    "top_1_accuracy": 0.24,
+    "top_5_accuracy": 0.3,
+    "top_10_accuracy": 0.3,
+    "bugs_localized": 30,
+    "mrr": 0.26666666666666666
+  },
+  "results": [
+    {
+      "bug_id": "Lang-1",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-3",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "UncheckedException",
+        "ConvergenceException",
+        "ZeroException",
+        "CloneFailedException",
+        "UncheckedInterruptedException",
+        "InsufficientDataException",
+        "MathParseException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-4",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.translate.LookupTranslator"
+      ],
+      "predictions": [
+        "LookupTranslatorTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-5",
+      "ground_truth": [
+        "org.apache.commons.lang3.LocaleUtils"
+      ],
+      "predictions": [
+        "LocaleUtils",
+        "ExceptionUtils",
+        "InvalidRepresentationException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-6",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ],
+      "predictions": [
+        "CharSequenceTranslator",
+        "StringEscapeUtils",
+        "ExceptionUtils",
+        "CharSequenceUtils",
+        "CharUtils",
+        "CharSet",
+        "DummyLocalizable",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "CharSetUtils"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-7",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MultiDimensionMismatchException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MatrixDimensionMismatchException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "NotANumberException",
+        "NotFiniteNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-8",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.FastDatePrinter"
+      ],
+      "predictions": [
+        "FastDatePrinterTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-9",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ],
+      "predictions": [
+        "FastDateParserTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-10",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ],
+      "predictions": [
+        "FastDateParserTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-11",
+      "ground_truth": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ],
+      "predictions": [
+        "RandomStringUtilsTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-12",
+      "ground_truth": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ],
+      "predictions": [
+        "RandomStringUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "RandomUtils",
+        "ContextedException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-13",
+      "ground_truth": [
+        "org.apache.commons.lang3.SerializationUtils"
+      ],
+      "predictions": [
+        "SerializationUtils",
+        "ExceptionUtils",
+        "SerializationException",
+        "NotANumberException",
+        "NotPositiveException",
+        "NotFiniteNumberException",
+        "NotStrictlyPositiveException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-14",
+      "ground_truth": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "predictions": [
+        "StringUtilsEqualsIndexOfTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "UncheckedException",
+        "ConvergenceException",
+        "ZeroException",
+        "CloneFailedException",
+        "UncheckedInterruptedException",
+        "InsufficientDataException",
+        "MathParseException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-15",
+      "ground_truth": [
+        "org.apache.commons.lang3.reflect.TypeUtils"
+      ],
+      "predictions": [
+        "TypeUtilsTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-16",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-17",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ],
+      "predictions": [
+        "StringEscapeUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-19",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ],
+      "predictions": [
+        "CharSequenceTranslator",
+        "NumericEntityUnescaper",
+        "ExceptionUtils",
+        "NumericEntityEscaper",
+        "CharSequenceUtils",
+        "CharUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "NonMonotonicSequenceException",
+        "MathIllegalStateException"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "bug_id": "Lang-20",
+      "ground_truth": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "LangCollectors",
+        "ArgUtils",
+        "FormattableUtils",
+        "ClassLoaderUtils",
+        "DummyLocalizable",
+        "Localizable",
+        "StringEscapeUtils",
+        "AnnotationUtils",
+        "ConcurrentUtils"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-21",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.DateUtils"
+      ],
+      "predictions": [
+        "DateUtilsTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-22",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.Fraction"
+      ],
+      "predictions": [
+        "FractionTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-23",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.ExtendedMessageFormat"
+      ],
+      "predictions": [
+        "ExtendedMessageFormatTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-24",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtilsTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-26",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ],
+      "predictions": [
+        "FastDateFormatTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-27",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-28",
+      "ground_truth": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ],
+      "predictions": [
+        "NumericEntityUnescaperTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-29",
+      "ground_truth": [
+        "org.apache.commons.lang3.SystemUtils"
+      ],
+      "predictions": [
+        "SystemUtilsTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-30",
+      "ground_truth": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "predictions": [
+        "StringUtilsEqualsIndexOfTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-31",
+      "ground_truth": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "predictions": [
+        "StringUtilsEqualsIndexOfTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-32",
+      "ground_truth": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder"
+      ],
+      "predictions": [
+        "HashCodeBuilderTest",
+        "ExceptionUtils",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-33",
+      "ground_truth": [
+        "org.apache.commons.lang3.ClassUtils"
+      ],
+      "predictions": [
+        "ClassUtils",
+        "ExceptionUtils",
+        "LangCollectors",
+        "ClassLoaderUtils",
+        "TransformerMap",
+        "ClassPathUtils",
+        "ArgUtils",
+        "ClassLoaderAwareObjectInputStream",
+        "ConcurrentUtils",
+        "NoClassNameToStringStyle"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-34",
+      "ground_truth": [
+        "org.apache.commons.lang3.builder.ToStringStyle"
+      ],
+      "predictions": [
+        "ToStringBuilderTest",
+        "ExceptionUtils",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-35",
+      "ground_truth": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ],
+      "predictions": [
+        "LangCollectors",
+        "ExceptionUtils",
+        "ExceptionContext",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ContextedException",
+        "ContextedRuntimeException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-36",
+      "ground_truth": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-37",
+      "ground_truth": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "LangCollectors",
+        "TransformUtils",
+        "AnnotationUtils",
+        "ArgUtils",
+        "CharSequenceUtils",
+        "ConcurrentUtils",
+        "TransformerMap",
+        "EqualsBuilder",
+        "InheritanceUtils"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-38",
+      "ground_truth": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ],
+      "predictions": [
+        "FastDateFormatTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-39",
+      "ground_truth": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "LangCollectors",
+        "ArgUtils",
+        "FormattableUtils",
+        "ClassLoaderUtils",
+        "DummyLocalizable",
+        "Localizable",
+        "StringEscapeUtils",
+        "AnnotationUtils",
+        "ConcurrentUtils"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-40",
+      "ground_truth": [
+        "org.apache.commons.lang.StringUtils"
+      ],
+      "predictions": [
+        "StringUtilsEqualsIndexOfTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-41",
+      "ground_truth": [
+        "org.apache.commons.lang.ClassUtils"
+      ],
+      "predictions": [
+        "ClassUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-42",
+      "ground_truth": [
+        "org.apache.commons.lang.Entities"
+      ],
+      "predictions": [
+        "StringEscapeUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-43",
+      "ground_truth": [
+        "org.apache.commons.lang.text.ExtendedMessageFormat"
+      ],
+      "predictions": [
+        "ExtendedMessageFormat",
+        "ExceptionUtils",
+        "ExceptionContext",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ContextedException",
+        "ContextedRuntimeException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-44",
+      "ground_truth": [
+        "org.apache.commons.lang.NumberUtils"
+      ],
+      "predictions": [
+        "NumberUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-45",
+      "ground_truth": [
+        "org.apache.commons.lang.WordUtils"
+      ],
+      "predictions": [
+        "WordUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-46",
+      "ground_truth": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ],
+      "predictions": [
+        "StringEscapeUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-47",
+      "ground_truth": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "LangCollectors",
+        "Builder",
+        "MapStrLookup",
+        "SystemPropertiesStrLookup",
+        "Builder",
+        "StrLookup",
+        "Builder",
+        "EqualsBuilder",
+        "Builder"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-49",
+      "ground_truth": [
+        "org.apache.commons.lang.math.Fraction"
+      ],
+      "predictions": [
+        "FractionTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-50",
+      "ground_truth": [
+        "org.apache.commons.lang.time.FastDateFormat"
+      ],
+      "predictions": [
+        "FastDateFormatTest",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-51",
+      "ground_truth": [
+        "org.apache.commons.lang.BooleanUtils"
+      ],
+      "predictions": [
+        "BooleanUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Lang-52",
+      "ground_truth": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ],
+      "predictions": [
+        "StringEscapeUtilsTest",
+        "ExceptionUtils",
+        "LangCollectors",
+        "FieldMatrix",
+        "RealMatrix",
+        "AbstractRealMatrix",
+        "AbstractFieldMatrix"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-53",
+      "ground_truth": [
+        "org.apache.commons.lang.time.DateUtils"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "CloneFailedException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException",
+        "LangCollectors"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Lang-54",
+      "ground_truth": [
+        "org.apache.commons.lang.LocaleUtils"
+      ],
+      "predictions": [
+        "LocaleUtils",
+        "ExceptionUtils",
+        "InvalidRepresentationException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-1",
+      "ground_truth": [
+        "org.apache.commons.math3.fraction.BigFraction",
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "predictions": [
+        "Fraction",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-2",
+      "ground_truth": [
+        "org.apache.commons.math3.distribution.HypergeometricDistribution"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-3",
+      "ground_truth": [
+        "org.apache.commons.math3.util.MathArrays"
+      ],
+      "predictions": [
+        "MathArrays",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionUtils",
+        "FastMathLiteralArrays",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-4",
+      "ground_truth": [
+        "org.apache.commons.math3.geometry.euclidean.threed.SubLine",
+        "org.apache.commons.math3.geometry.euclidean.twod.SubLine"
+      ],
+      "predictions": [
+        "SubLine",
+        "SubLine",
+        "Line",
+        "Line",
+        "ExceptionUtils",
+        "LineSearch",
+        "LineSearch",
+        "LineSearchFunction",
+        "LineTransform",
+        "MultiLineToStringStyle"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-5",
+      "ground_truth": [
+        "org.apache.commons.math3.complex.Complex"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-6",
+      "ground_truth": [
+        "org.apache.commons.math3.optim.BaseOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-7",
+      "ground_truth": [
+        "org.apache.commons.math3.ode.AbstractIntegrator"
+      ],
+      "predictions": [
+        "EmbeddedRungeKuttaIntegrator",
+        "AbstractIntegrator",
+        "EventState",
+        "EmbeddedRungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaIntegrator",
+        "RungeKuttaIntegrator",
+        "RungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaFieldIntegrator",
+        "ExceptionUtils",
+        "ClassicalRungeKuttaStepInterpolator"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "bug_id": "Math-8",
+      "ground_truth": [
+        "org.apache.commons.math3.distribution.DiscreteDistribution"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-9",
+      "ground_truth": [
+        "org.apache.commons.math3.geometry.euclidean.threed.Line"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-10",
+      "ground_truth": [
+        "org.apache.commons.math3.analysis.differentiation.DSCompiler"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-11",
+      "ground_truth": [
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-12",
+      "ground_truth": [
+        "org.apache.commons.math3.random.BitsStreamGenerator"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-13",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer"
+      ],
+      "predictions": [
+        "AbstractLeastSquaresOptimizer",
+        "BaseAbstractMultivariateVectorOptimizer",
+        "AbstractLeastSquaresOptimizer",
+        "EigenDecomposition",
+        "CurveFitter",
+        "CurveFitter",
+        "DiagonalMatrix",
+        "AbstractCurveFitter",
+        "BaseAbstractMultivariateSimpleBoundsOptimizer",
+        "BaseMultivariateVectorOptimizer"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-14",
+      "ground_truth": [
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight"
+      ],
+      "predictions": [
+        "MatrixUtils",
+        "CurveFitter",
+        "CurveFitter",
+        "PolynomialFitter",
+        "PolynomialFitter",
+        "BlockRealMatrix",
+        "PolynomialCurveFitter",
+        "ExceptionUtils",
+        "AbstractCurveFitter",
+        "GaussianCurveFitter"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-15",
+      "ground_truth": [
+        "org.apache.commons.math3.util.FastMath"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-16",
+      "ground_truth": [
+        "org.apache.commons.math3.util.FastMath"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-17",
+      "ground_truth": [
+        "org.apache.commons.math3.dfp.Dfp"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-18",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-19",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "predictions": [
+        "BaseAbstractMultivariateSimpleBoundsOptimizer",
+        "BaseAbstractMultivariateOptimizer",
+        "CMAESOptimizer",
+        "CMAESOptimizer",
+        "BaseMultivariateSimpleBoundsOptimizer",
+        "BaseMultivariateOptimizer",
+        "BaseMultivariateVectorOptimizer",
+        "BaseMultiStartMultivariateOptimizer",
+        "BaseMultivariateOptimizer",
+        "BaseMultivariateMultiStartOptimizer"
+      ],
+      "hit": true,
+      "rank": 3
+    },
+    {
+      "bug_id": "Math-20",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "OutOfRangeException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-21",
+      "ground_truth": [
+        "org.apache.commons.math3.linear.RectangularCholeskyDecomposition"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-22",
+      "ground_truth": [
+        "org.apache.commons.math3.distribution.FDistribution",
+        "org.apache.commons.math3.distribution.UniformRealDistribution"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-23",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-24",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-25",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.fitting.HarmonicFitter"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-26",
+      "ground_truth": [
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-27",
+      "ground_truth": [
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-28",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.linear.SimplexSolver"
+      ],
+      "predictions": [
+        "SimplexSolver",
+        "SimplexSolver",
+        "AbstractLinearOptimizer",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "SimplexOptimizer"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-29",
+      "ground_truth": [
+        "org.apache.commons.math3.linear.OpenMapRealVector"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-30",
+      "ground_truth": [
+        "org.apache.commons.math3.stat.inference.MannWhitneyUTest"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-31",
+      "ground_truth": [
+        "org.apache.commons.math3.util.ContinuedFraction"
+      ],
+      "predictions": [
+        "ContinuedFraction",
+        "AbstractIntegerDistribution",
+        "BinomialDistribution",
+        "Beta",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-32",
+      "ground_truth": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet"
+      ],
+      "predictions": [
+        "PolygonsSet",
+        "AbstractRegion",
+        "BSPTree",
+        "PolyhedronsSet",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-33",
+      "ground_truth": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-34",
+      "ground_truth": [
+        "org.apache.commons.math3.genetics.ListPopulation"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-35",
+      "ground_truth": [
+        "org.apache.commons.math3.genetics.ElitisticListPopulation"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-36",
+      "ground_truth": [
+        "org.apache.commons.math.fraction.BigFraction"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-37",
+      "ground_truth": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "predictions": [
+        "TestUtils",
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-38",
+      "ground_truth": [
+        "org.apache.commons.math.optimization.direct.BOBYQAOptimizer"
+      ],
+      "predictions": [
+        "BaseAbstractMultivariateSimpleBoundsOptimizer",
+        "BaseAbstractMultivariateOptimizer",
+        "BOBYQAOptimizer",
+        "BOBYQAOptimizer",
+        "BaseMultivariateSimpleBoundsOptimizer",
+        "BaseMultivariateOptimizer",
+        "BaseMultivariateVectorOptimizer",
+        "BaseMultiStartMultivariateOptimizer",
+        "BaseMultivariateOptimizer",
+        "BaseMultivariateMultiStartOptimizer"
+      ],
+      "hit": true,
+      "rank": 3
+    },
+    {
+      "bug_id": "Math-39",
+      "ground_truth": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator"
+      ],
+      "predictions": [
+        "EmbeddedRungeKuttaIntegrator",
+        "ExpandableStatefulODE",
+        "AbstractIntegrator",
+        "EmbeddedRungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaIntegrator",
+        "RungeKuttaIntegrator",
+        "RungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaFieldIntegrator",
+        "ExceptionUtils",
+        "RungeKuttaStepInterpolator"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-40",
+      "ground_truth": [
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+      ],
+      "predictions": [
+        "BracketingNthOrderBrentSolver",
+        "BracketingNthOrderBrentSolverDFP",
+        "FieldBracketingNthOrderBrentSolver",
+        "BrentSolver",
+        "BaseAbstractUnivariateSolver",
+        "ExceptionUtils",
+        "AbstractUnivariateSolver",
+        "UnivariateSolverUtils",
+        "AbstractDifferentiableUnivariateSolver",
+        "AbstractUnivariateDifferentiableSolver"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-41",
+      "ground_truth": [
+        "org.apache.commons.math.stat.descriptive.moment.Variance"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-42",
+      "ground_truth": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-43",
+      "ground_truth": [
+        "org.apache.commons.math.stat.descriptive.SummaryStatistics"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "ExceptionContext",
+        "ContextedException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-44",
+      "ground_truth": [
+        "org.apache.commons.math.ode.AbstractIntegrator"
+      ],
+      "predictions": [
+        "EmbeddedRungeKuttaIntegrator",
+        "AbstractIntegrator",
+        "EventState",
+        "EmbeddedRungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaIntegrator",
+        "RungeKuttaIntegrator",
+        "RungeKuttaFieldIntegrator",
+        "ClassicalRungeKuttaFieldIntegrator",
+        "ExceptionUtils",
+        "MathIllegalStateException"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "bug_id": "Math-45",
+      "ground_truth": [
+        "org.apache.commons.math.linear.OpenMapRealMatrix"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-46",
+      "ground_truth": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-47",
+      "ground_truth": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MathInternalError",
+        "FastMathLiteralArrays"
+      ],
+      "hit": false,
+      "rank": -1
+    },
+    {
+      "bug_id": "Math-48",
+      "ground_truth": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+      ],
+      "predictions": [
+        "BaseSecantSolver",
+        "BaseUnivariateSolver",
+        "ExceptionUtils",
+        "BaseAbstractUnivariateSolver",
+        "AbstractUnivariateSolver",
+        "SecantSolver",
+        "AbstractDifferentiableUnivariateSolver",
+        "AbstractUnivariateDifferentiableSolver",
+        "BaseUnivariateOptimizer",
+        "BaseAbstractUnivariateOptimizer"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "bug_id": "Math-49",
+      "ground_truth": [
+        "org.apache.commons.math.linear.OpenMapRealVector"
+      ],
+      "predictions": [
+        "MathRuntimeException",
+        "OpenMapRealVector",
+        "MathArithmeticException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "ExceptionUtils",
+        "MathParseException",
+        "MathIllegalNumberException",
+        "MathInternalError"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "bug_id": "Math-50",
+      "ground_truth": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+      ],
+      "predictions": [
+        "ExceptionUtils",
+        "MathArithmeticException",
+        "MathRuntimeException",
+        "MathIllegalStateException",
+        "MathIllegalArgumentException",
+        "MathUnsupportedOperationException",
+        "MultiDimensionMismatchException",
+        "MatrixDimensionMismatchException",
+        "MathParseException",
+        "MathIllegalNumberException"
+      ],
+      "hit": false,
+      "rank": -1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Bug Report: Lang-16 (LANG-746)
+
+Issue: https://issues.apache.org/jira/browse/LANG-746
+
+Exception: java.lang.NumberFormatException
+Message: 0Xfade is not a valid number.
+
+Failing Tests:
+  - org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber
+
+Stack Trace:
+  --- org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber
+  at org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:545)
+  at org.apache.commons.lang3.math.NumberUtilsTest.testCreateNumber(NumberUtilsTest.java:197)
+
+Classes mentioned in trace:
+  - NumberUtils
+
+---
+GROUND TRUTH: org.apache.commons.lang3.math.NumberUtils

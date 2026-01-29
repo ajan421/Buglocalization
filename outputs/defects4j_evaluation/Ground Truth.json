@@ -1,0 +1,162 @@
+{
+  "Lang-1": {
+    "modified_classes": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "simple_names": [
+      "NumberUtils"
+    ]
+  },
+  "Lang-3": {
+    "modified_classes": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "simple_names": [
+      "NumberUtils"
+    ]
+  },
+  "Lang-4": {
+    "modified_classes": [
+      "org.apache.commons.lang3.text.translate.LookupTranslator"
+    ],
+    "simple_names": [
+      "LookupTranslator"
+    ]
+  },
+  "Lang-5": {
+    "modified_classes": [
+      "org.apache.commons.lang3.LocaleUtils"
+    ],
+    "simple_names": [
+      "LocaleUtils"
+    ]
+  },
+  "Lang-6": {
+    "modified_classes": [
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+    ],
+    "simple_names": [
+      "CharSequenceTranslator"
+    ]
+  },
+  "Lang-7": {
+    "modified_classes": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "simple_names": [
+      "NumberUtils"
+    ]
+  },
+  "Lang-8": {
+    "modified_classes": [
+      "org.apache.commons.lang3.time.FastDatePrinter"
+    ],
+    "simple_names": [
+      "FastDatePrinter"
+    ]
+  },
+  "Lang-9": {
+    "modified_classes": [
+      "org.apache.commons.lang3.time.FastDateParser"
+    ],
+    "simple_names": [
+      "FastDateParser"
+    ]
+  },
+  "Lang-10": {
+    "modified_classes": [
+      "org.apache.commons.lang3.time.FastDateParser"
+    ],
+    "simple_names": [
+      "FastDateParser"
+    ]
+  },
+  "Lang-11": {
+    "modified_classes": [
+      "org.apache.commons.lang3.RandomStringUtils"
+    ],
+    "simple_names": [
+      "RandomStringUtils"
+    ]
+  },
+  "Lang-12": {
+    "modified_classes": [
+      "org.apache.commons.lang3.RandomStringUtils"
+    ],
+    "simple_names": [
+      "RandomStringUtils"
+    ]
+  },
+  "Lang-13": {
+    "modified_classes": [
+      "org.apache.commons.lang3.SerializationUtils"
+    ],
+    "simple_names": [
+      "SerializationUtils"
+    ]
+  },
+  "Lang-14": {
+    "modified_classes": [
+      "org.apache.commons.lang3.StringUtils"
+    ],
+    "simple_names": [
+      "StringUtils"
+    ]
+  },
+  "Lang-15": {
+    "modified_classes": [
+      "org.apache.commons.lang3.reflect.TypeUtils"
+    ],
+    "simple_names": [
+      "TypeUtils"
+    ]
+  },
+  "Lang-16": {
+    "modified_classes": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "simple_names": [
+      "NumberUtils"
+    ]
+  },
+  "Lang-17": {
+    "modified_classes": [
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+    ],
+    "simple_names": [
+      "CharSequenceTranslator"
+    ]
+  },
+  "Lang-19": {
+    "modified_classes": [
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+    ],
+    "simple_names": [
+      "NumericEntityUnescaper"
+    ]
+  },
+  "Lang-20": {
+    "modified_classes": [
+      "org.apache.commons.lang3.StringUtils"
+    ],
+    "simple_names": [
+      "StringUtils"
+    ]
+  },
+  "Lang-21": {
+    "modified_classes": [
+      "org.apache.commons.lang3.time.DateUtils"
+    ],
+    "simple_names": [
+      "DateUtils"
+    ]
+  },
+  "Lang-22": {
+    "modified_classes": [
+      "org.apache.commons.lang3.math.Fraction"
+    ],
+    "simple_names": [
+      "Fraction"
+    ]
+  }
+}

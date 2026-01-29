@@ -1,0 +1,17 @@
+Bug Report: Lang-4 (LANG-882)
+
+Issue: https://issues.apache.org/jira/browse/LANG-882
+
+Exception: junit.framework.AssertionFailedError
+Message: Incorrect codepoint consumption expected:<3> but was:<0>
+
+Failing Tests:
+  - org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
+
+Stack Trace:
+  --- org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
+  at org.apache.commons.lang3.text.translate.LookupTranslatorTest.testLang882(LookupTranslatorTest.java:48)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.text.translate.LookupTranslator

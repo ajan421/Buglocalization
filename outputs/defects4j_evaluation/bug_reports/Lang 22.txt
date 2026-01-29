@@ -1,0 +1,20 @@
+Bug Report: Lang-22 (LANG-662)
+
+Issue: https://issues.apache.org/jira/browse/LANG-662
+
+Exception: junit.framework.AssertionFailedError
+Message: expected:<-1073741824> but was:<-2147483648>
+
+Failing Tests:
+  - org.apache.commons.lang3.math.FractionTest::testReducedFactory_int_int
+  - org.apache.commons.lang3.math.FractionTest::testReduce
+
+Stack Trace:
+  --- org.apache.commons.lang3.math.FractionTest::testReducedFactory_int_int
+  at org.apache.commons.lang3.math.FractionTest.testReducedFactory_int_int(FractionTest.java:336)
+  --- org.apache.commons.lang3.math.FractionTest::testReduce
+  at org.apache.commons.lang3.math.FractionTest.testReduce(FractionTest.java:654)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.math.Fraction

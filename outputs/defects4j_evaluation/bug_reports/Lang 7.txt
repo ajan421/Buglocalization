@@ -1,0 +1,17 @@
+Bug Report: Lang-7 (LANG-822)
+
+Issue: https://issues.apache.org/jira/browse/LANG-822
+
+Exception: junit.framework.AssertionFailedError
+Message: Expected NumberFormatException
+
+Failing Tests:
+  - org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber
+
+Stack Trace:
+  --- org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber
+  at org.apache.commons.lang3.math.NumberUtilsTest.testCreateNumber(NumberUtilsTest.java:242)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.math.NumberUtils

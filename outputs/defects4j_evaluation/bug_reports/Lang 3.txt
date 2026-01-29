@@ -1,0 +1,16 @@
+Bug Report: Lang-3 (LANG-693)
+
+Issue: https://issues.apache.org/jira/browse/LANG-693
+
+Exception: junit.framework.AssertionFailedError
+
+Failing Tests:
+  - org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss
+
+Stack Trace:
+  --- org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss
+  at org.apache.commons.lang3.math.NumberUtilsTest.testStringCreateNumberEnsureNoPrecisionLoss(NumberUtilsTest.java:129)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.math.NumberUtils

@@ -1,0 +1,23 @@
+Bug Report: Lang-6 (LANG-857)
+
+Issue: https://issues.apache.org/jira/browse/LANG-857
+
+Exception: java.lang.StringIndexOutOfBoundsException
+Message: String index out of range: 2
+
+Failing Tests:
+  - org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs
+
+Stack Trace:
+  --- org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:95)
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:59)
+  at org.apache.commons.lang3.StringEscapeUtils.escapeCsv(StringEscapeUtils.java:556)
+  at org.apache.commons.lang3.StringUtilsTest.testEscapeSurrogatePairs(StringUtilsTest.java:2187)
+
+Classes mentioned in trace:
+  - StringEscapeUtils
+  - CharSequenceTranslator
+
+---
+GROUND TRUTH: org.apache.commons.lang3.text.translate.CharSequenceTranslator

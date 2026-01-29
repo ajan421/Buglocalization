@@ -1,0 +1,22 @@
+Bug Report: Lang-10 (LANG-831)
+
+Issue: https://issues.apache.org/jira/browse/LANG-831
+
+Exception: junit.framework.AssertionFailedError
+Message: Parsed dates should be equal expected:<null> but was:<Mon Mar 02 21:00:00 PST 1970>
+
+Failing Tests:
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_831
+  - org.apache.commons.lang3.time.FastDateParserTest::testLANG_831
+
+Stack Trace:
+  --- org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_831
+  at org.apache.commons.lang3.time.FastDateParserTest.testSdfAndFdp(FastDateParserTest.java:388)
+  at org.apache.commons.lang3.time.FastDateParserTest.testLANG_831(FastDateParserTest.java:348)
+  --- org.apache.commons.lang3.time.FastDateParserTest::testLANG_831
+  at org.apache.commons.lang3.time.FastDateParserTest.testSdfAndFdp(FastDateParserTest.java:377)
+  at org.apache.commons.lang3.time.FastDateParserTest.testLANG_831(FastDateParserTest.java:348)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.time.FastDateParser

@@ -1,0 +1,29 @@
+Bug Report: Lang-19 (LANG-710)
+
+Issue: https://issues.apache.org/jira/browse/LANG-710
+
+Exception: java.lang.StringIndexOutOfBoundsException
+Message: String index out of range: 19
+
+Failing Tests:
+  - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity
+  - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds
+
+Stack Trace:
+  --- org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity
+  at org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:59)
+  at org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testUnfinishedEntity(NumericEntityUnescaperTest.java:51)
+  --- org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds
+  at org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:44)
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)
+  at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:59)
+  at org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testOutOfBounds(NumericEntityUnescaperTest.java:41)
+
+Classes mentioned in trace:
+  - NumericEntityUnescaper
+  - CharSequenceTranslator
+
+---
+GROUND TRUTH: org.apache.commons.lang3.text.translate.NumericEntityUnescaper

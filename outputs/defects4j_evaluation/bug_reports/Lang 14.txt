@@ -1,0 +1,16 @@
+Bug Report: Lang-14 (LANG-786)
+
+Issue: https://issues.apache.org/jira/browse/LANG-786
+
+Exception: junit.framework.AssertionFailedError
+
+Failing Tests:
+  - org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testEquals
+
+Stack Trace:
+  --- org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testEquals
+  at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testEquals(StringUtilsEqualsIndexOfTest.java:490)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.StringUtils

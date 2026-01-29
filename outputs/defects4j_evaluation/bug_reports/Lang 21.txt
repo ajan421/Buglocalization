@@ -1,0 +1,17 @@
+Bug Report: Lang-21 (LANG-677)
+
+Issue: https://issues.apache.org/jira/browse/LANG-677
+
+Exception: junit.framework.AssertionFailedError
+Message: LANG-677
+
+Failing Tests:
+  - org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal
+
+Stack Trace:
+  --- org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal
+  at org.apache.commons.lang3.time.DateUtilsTest.testIsSameLocalTime_Cal(DateUtilsTest.java:237)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.time.DateUtils

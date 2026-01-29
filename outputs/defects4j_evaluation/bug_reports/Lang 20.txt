@@ -1,0 +1,25 @@
+Bug Report: Lang-20 (LANG-703)
+
+Issue: https://issues.apache.org/jira/browse/LANG-703
+
+Exception: java.lang.NullPointerException
+
+Failing Tests:
+  - org.apache.commons.lang3.StringUtilsTest::testJoin_ArrayChar
+  - org.apache.commons.lang3.StringUtilsTest::testJoin_Objectarray
+
+Stack Trace:
+  --- org.apache.commons.lang3.StringUtilsTest::testJoin_ArrayChar
+  at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3298)
+  at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayChar(StringUtilsTest.java:209)
+  --- org.apache.commons.lang3.StringUtilsTest::testJoin_Objectarray
+  at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3383)
+  at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3338)
+  at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3230)
+  at org.apache.commons.lang3.StringUtilsTest.testJoin_Objectarray(StringUtilsTest.java:193)
+
+Classes mentioned in trace:
+  - StringUtils
+
+---
+GROUND TRUTH: org.apache.commons.lang3.StringUtils

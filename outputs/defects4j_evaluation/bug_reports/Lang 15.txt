@@ -1,0 +1,21 @@
+Bug Report: Lang-15 (LANG-775)
+
+Issue: https://issues.apache.org/jira/browse/LANG-775
+
+Exception: junit.framework.AssertionFailedError
+Message: expected:<2> but was:<0>
+
+Failing Tests:
+  - org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments
+  - org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable
+
+Stack Trace:
+  --- org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments
+  at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetTypeArguments(TypeUtilsTest.java:505)
+  --- org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable
+  junit.framework.AssertionFailedError: type class org.apache.commons.lang3.reflect.TypeUtilsTest$Thing not assignable to org.apache.commons.lang3.reflect.TypeUtilsTest$This<java.lang.String, java.lang.String>!
+  at org.apache.commons.lang3.reflect.TypeUtilsTest.testIsAssignable(TypeUtilsTest.java:344)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.reflect.TypeUtils

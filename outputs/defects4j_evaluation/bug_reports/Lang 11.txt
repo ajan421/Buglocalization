@@ -1,0 +1,17 @@
+Bug Report: Lang-11 (LANG-807)
+
+Issue: https://issues.apache.org/jira/browse/LANG-807
+
+Exception: junit.framework.AssertionFailedError
+Message: Message (bound must be positive) must contain 'start'
+
+Failing Tests:
+  - org.apache.commons.lang3.RandomStringUtilsTest::testLANG807
+
+Stack Trace:
+  --- org.apache.commons.lang3.RandomStringUtilsTest::testLANG807
+  at org.apache.commons.lang3.RandomStringUtilsTest.testLANG807(RandomStringUtilsTest.java:139)
+
+
+---
+GROUND TRUTH: org.apache.commons.lang3.RandomStringUtils

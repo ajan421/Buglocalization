@@ -1,0 +1,25 @@
+Bug Report: Lang-12 (LANG-805)
+
+Issue: https://issues.apache.org/jira/browse/LANG-805
+
+Exception: java.lang.ArrayIndexOutOfBoundsException
+Message: 1171399597
+
+Failing Tests:
+  - org.apache.commons.lang3.RandomStringUtilsTest::testExceptions
+  - org.apache.commons.lang3.RandomStringUtilsTest::testLANG805
+
+Stack Trace:
+  --- org.apache.commons.lang3.RandomStringUtilsTest::testExceptions
+  at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:248)
+  at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:321)
+  at org.apache.commons.lang3.RandomStringUtilsTest.testExceptions(RandomStringUtilsTest.java:148)
+  --- org.apache.commons.lang3.RandomStringUtilsTest::testLANG805
+  at org.apache.commons.lang3.RandomStringUtils.random(RandomStringUtils.java:248)
+  at org.apache.commons.lang3.RandomStringUtilsTest.testLANG805(RandomStringUtilsTest.java:130)
+
+Classes mentioned in trace:
+  - RandomStringUtils
+
+---
+GROUND TRUTH: org.apache.commons.lang3.RandomStringUtils
